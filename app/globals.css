@@ -3,5 +3,24 @@
 @tailwind utilities;
 
 body {
-    background-color: black;
+    background-color: #020103;
+    height: 100vh;
+    width: 100%;
+    color: #ffffff;
+}
+
+.body-s {
+    @apply text-sm leading-6 tracking-tight font-normal;
+}
+
+.body-xs {
+    @apply text-xs leading-6 tracking-tight font-normal;
+}
+
+.custom-border {
+    @apply border border-white border-opacity-40;
+}
+
+.gradientButton {
+    @apply py-1 px-4 rounded-lg bg-bleached-purple bg-opacity-40 backdrop-blur-lg shadow-inner-shadow-custom;
 }
