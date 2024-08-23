@@ -1,11 +1,11 @@
-import { WaitlistButtonProps } from '@/types/index.t'
+import { WaitlistButtonProps } from "@/types/index.t";
 
-const Button = ( { type, label, value, icon, variant }:WaitlistButtonProps ) => {
+const Button = ({ type, label, value, icon, variant }: WaitlistButtonProps) => {
   return (
-    <button className={`body-s ${variant}`}>
-        {label}
+    <button className={`body-s cursor-pointer rounded-lg ${variant}`}>
+      {label}
     </button>
-  )
-}
+  );
+};
 
-export default Button
+export default Button;

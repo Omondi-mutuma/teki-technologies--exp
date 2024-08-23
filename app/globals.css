@@ -3,24 +3,52 @@
 @tailwind utilities;
 
 body {
-    background-color: #020103;
-    height: 100vh;
-    width: 100%;
-    color: #ffffff;
+  background-color: #020103;
+  height: 100vh;
+  width: 100%;
+  color: #ffffff;
+}
+
+.body-m {
+  @apply text-body-m leading-6 tracking-tight font-normal;
 }
 
 .body-s {
-    @apply text-sm leading-6 tracking-tight font-normal;
+  @apply text-body-s leading-6 tracking-tight font-normal;
 }
 
 .body-xs {
-    @apply text-xs leading-6 tracking-tight font-normal;
+  @apply text-body-xs leading-6 tracking-tight font-normal;
 }
 
 .custom-border {
-    @apply border border-white border-opacity-40;
+  @apply border border-white border-opacity-10;
 }
 
 .gradientButton {
-    @apply py-1 px-4 rounded-lg bg-bleached-purple bg-opacity-40 backdrop-blur-lg shadow-inner-shadow-custom;
+  @apply py-1 px-4 rounded-lg bg-bleached-purple bg-opacity-40 backdrop-blur-lg shadow-inner-shadow-custom;
+}
+
+.white-button {
+  @apply py-1 px-4 rounded-lg bg-white text-black font-medium text-body-s leading-8;
+}
+
+.gradientText {
+  @apply bg-gradient-to-b from-custom-gradient-start to-custom-gradient-end text-transparent bg-clip-text;
+}
+
+.large-heading-text {
+  @apply font-medium text-heading-1  tracking-heading-spacing;
+}
+
+.heading-text {
+  @apply font-medium text-heading-2 leading-sm-heading-height tracking-heading-spacing;
+}
+
+.heading-paragraph {
+  @apply font-light leading-7 text-body-l;
+}
+
+.hero-img {
+  @apply w-full -m-16;
 }
