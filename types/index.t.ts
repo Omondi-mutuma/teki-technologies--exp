@@ -10,3 +10,7 @@ export interface BadgeInfoProps {
   badgeText: string;
   badgeColor?: string;
 }
+export interface CompanyCardProps {
+  source: string;
+  name?: string;
+}

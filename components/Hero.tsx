@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="relative w-full flex flex-col justify-center items-center gap-3 py-20 overflow-hidden transition-all">
+    <section className="relative w-full flex flex-col justify-center items-center gap-3 py-[87px] transition-all">
       <Badge badgeStatus="New" badgeText="Latest integration just arrived" />
       <div className="flex flex-col gap-4 justify-center items-center text-center">
         <h1 className="heading-text md:text-heading-1 md:leading-lg-heading-height">
